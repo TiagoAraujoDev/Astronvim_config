@@ -1,0 +1,17 @@
+return {
+  FoldColumn = { bg = "#282c34" },
+  CursorLine = { bg = "#2d313b" },
+  Pmenu = { bg = "#2d313b", fg = "#dcd7ba" },
+  PmenuThumb = { bg = "#5c6370" },
+  CmpCompletionBorder = { bg = "#282c34", fg = "#5c6370" },
+  FloatBorder = { bg = "#282c34", fg = "#5c6370" },
+  NoiceMini = { bg = "#282c34" },
+  TelescopeNormal = { fg = "#5c6370", bg = "#2d313b" },
+  TelescopeBorder = { fg = "#5c6370", bg = "#2d313b" },
+  TelescopePromptCounter = { fg = "#5c6370", bg = "#2d313b" },
+  TelescopeSelection = { fg = "#c678dd", bg = "#2d313b" },
+  DiagnosticUnderlineError = { undercurl = true },
+  DiagnosticUnderlineWarn = { undercurl = true },
+  DiagnosticUnderlineInfo = { undercurl = true },
+  DiagnosticUnderlineHint = { undercurl = true },
+}
