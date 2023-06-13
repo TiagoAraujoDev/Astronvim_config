@@ -17,6 +17,11 @@ return {
   { import = "astrocommunity.utility.transparent-nvim" },
   { import = "astrocommunity.editing-support.nvim-ts-rainbow" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
+  { "todo-comments.nvim",
+    keys = {
+      { "<leader>fT", "<cmd>TodoTelescope<cr>", desc = "Find ToDo Comments" }
+    }
+  },
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
   { "glow.nvim",
