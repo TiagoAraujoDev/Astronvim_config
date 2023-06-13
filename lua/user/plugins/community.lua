@@ -19,6 +19,11 @@ return {
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   { import = "astrocommunity.motion.nvim-surround" },
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
+  { "glow.nvim",
+    keys = {
+      { "<leader>m", "<cmd>Glow<cr>", desc = "Preview markdown" }
+    }
+  },
 
   -- Project
   { import = "astrocommunity.project.project-nvim" },
