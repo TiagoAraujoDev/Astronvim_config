@@ -81,5 +81,9 @@ return {
         -- used in excluded filetypes
       })
     end,
+    keys = {
+      { "<S-h>", "<plug>(CybuPrev)", desc = "next buffer" },
+      { "<S-l>", "<plug>(CybuNext)", desc = "previous buffer" },
+    },
   },
 }
