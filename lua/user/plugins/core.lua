@@ -4,15 +4,9 @@ return {
     "goolord/alpha-nvim",
     opts = function(_, opts)
       -- customize the dashboard header
-      opts.section.header.val = {
-        "███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗",
-        "████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║",
-        "██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║",
-        "██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║",
-        "██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║",
-        "╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝",
-        "                   [ Astro ]                      ",
-      }
+      local headers = require "user.header"
+      opts.section.header.val = headers.main
+
       -- customize the buttons
       local button = require("astronvim.utils").alpha_button
       opts.section.buttons.val = {
@@ -23,6 +17,7 @@ return {
         button("LDR f w", "  Find Word"),
         button("LDR S l", "  Last Session"),
       }
+
       return opts
     end,
   },
@@ -162,15 +157,15 @@ return {
       return {
         defaults = {
           prompt_prefix = "  ",
-          selection_caret = " "
-        }
+          selection_caret = " ",
+        },
       }
     end,
     -- the first parameter is the plugin specification
     -- the second is the table of options as set up in Lazy with the `opts` key
     config = function(plugin, opts)
       -- run the core AstroNvim configuration function with the options table
-      require("plugins.configs.telescope")(plugin, opts)
+      require "plugins.configs.telescope" (plugin, opts)
 
       -- require telescope and load extensions as necessary
       local telescope = require "telescope"
@@ -184,7 +179,7 @@ return {
       local status = require "astronvim.utils.status"
 
       opts.winbar = {
-                      -- create custom winbar
+        -- create custom winbar
         -- store the current buffer number
         init = function(self) self.bufnr = vim.api.nvim_get_current_buf() end,
         fallthrough = false, -- pick the correct winbar based on condition
@@ -211,9 +206,7 @@ return {
           status.component.file_info { -- add file_info to breadcrumbs
             file_icon = { hl = status.hl.filetype_color, padding = { left = 0 } },
             file_modified = {
-              condition = function()
-                return vim.bo.modified
-              end,
+              condition = function() return vim.bo.modified end,
               hl = { fg = "white" },
               padding = { left = 1, right = 1 },
             },
@@ -231,7 +224,7 @@ return {
             -- depth_limit = 0,
             -- depth_limit_indicator = "..",
           },
-        }
+        },
       }
       return opts
     end,
@@ -258,4 +251,3 @@ return {
     end,
   },
 }
-
