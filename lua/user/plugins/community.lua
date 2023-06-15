@@ -53,8 +53,15 @@ return {
   {
     "onedarkpro.nvim",
     opts = {
+      styles = {
+        types = "italic",
+        methods = "bold,italic",
+        comments = "italic",
+        virtual_text = "bold",
+      },
       options = {
         highlight_inactive_windows = false,
+        cursorline = false,
       },
     },
   },
