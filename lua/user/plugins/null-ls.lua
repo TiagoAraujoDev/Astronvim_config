@@ -7,11 +7,12 @@ return {
 
     -- NOTE: Check supported formatters and linters
 
-    -- local diagnostics = null_ls.builtins.diagnostics
+    local diagnostics = null_ls.builtins.diagnostics
     local formatting = null_ls.builtins.formatting
 
     config.sources = {
       formatting.stylua,
+      diagnostics.luacheck,
     }
     return config -- return final config table
   end,
