@@ -17,9 +17,9 @@ return {
     },
   },
   -- Set colorscheme to use
-  -- colorscheme = "vscode",
+  colorscheme = "vscode",
   -- colorscheme = "kanagawa",
-  colorscheme = "onedark",
+  -- colorscheme = "onedark",
   -- colorscheme = "nightfox",
   -- colorscheme = "astrodark",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
