@@ -161,6 +161,9 @@ return {
         },
       }
     end,
+    keys = {
+      { "<leader>fH", "<cmd>Telescope highlights<cr>", desc = "Find highlights"}
+    },
     -- the first parameter is the plugin specification
     -- the second is the table of options as set up in Lazy with the `opts` key
     config = function(plugin, opts)
@@ -249,5 +252,15 @@ return {
       }
       return opts
     end,
+  },
+  -- noice
+  {
+    "nvim-notify",
+    opts = {
+      stages = "slide",
+      timeout = 3000,
+      max_height = function() return math.floor(vim.o.lines * 0.75) end,
+      max_width = function() return math.floor(vim.o.columns * 0.75) end,
+    },
   },
 }
