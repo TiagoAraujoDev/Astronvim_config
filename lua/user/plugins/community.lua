@@ -12,6 +12,7 @@ return {
   { import = "astrocommunity.pack.java" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.go" },
+  { import = "astrocommunity.pack.astro" },
 
   -- Utilities
   { import = "astrocommunity.utility.noice-nvim" },
