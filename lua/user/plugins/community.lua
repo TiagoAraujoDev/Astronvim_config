@@ -63,7 +63,7 @@ return {
       },
       options = {
         highlight_inactive_windows = false,
-        cursorline = false,
+        cursorline = true,
       },
     },
   },
