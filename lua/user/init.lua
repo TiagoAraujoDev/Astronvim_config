@@ -17,8 +17,8 @@ return {
     },
   },
   -- Set colorscheme to use
-  colorscheme = "vscode",
-  -- colorscheme = "kanagawa",
+  -- colorscheme = "vscode",
+  colorscheme = "kanagawa",
   -- colorscheme = "onedark",
   -- colorscheme = "nightfox",
   -- colorscheme = "astrodark",
@@ -50,6 +50,7 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
+      "emmet_ls",
     },
   },
   -- Configure require("lazy").setup() options
