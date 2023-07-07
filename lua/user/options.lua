@@ -2,7 +2,7 @@ return function(local_vim)
   -- OPTS
   local_vim.opt.relativenumber = true
   local_vim.opt.showtabline = 0
-  -- local_vim.opt.formatoptions = vim.opt.formatoptions:remove "cro"
+  local_vim.opt.formatoptions = "jql"
 
   -- Global
   local_vim.g.mapleader = " "
