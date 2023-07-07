@@ -61,12 +61,12 @@ return {
       },
     },
 
-    mappings = function (maps)
+    mappings = function(maps)
       maps.n.gh = maps.n.K
       maps.n.K = nil
 
       return maps
-    end
+    end,
   },
   -- Configure require("lazy").setup() options
   lazy = {
@@ -86,9 +86,9 @@ return {
     -- create a new autocmd on the "User" event
     -- vim.api.nvim_create_autocmd("User", {
     --   desc = "When Inserting line bellow disable autocomment", -- nice description
-    --   pattern = "AstroFile", -- the pattern si the name of our User autocommand events
+    --   pattern = "*", -- the pattern si the name of our User autocommand events
     --   group = "set_format_opts", -- add the autocmd to the newly created augroup
-    --   command = vim.cmd("lua vim.opt.formatoptions:remove { 'c', 'r', 'o' }"),
+    --   command = vim.cmd [[set formatoptions-=cro]],
     -- })
   end,
 }
