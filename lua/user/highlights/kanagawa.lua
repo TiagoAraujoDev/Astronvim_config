@@ -15,4 +15,5 @@ return {
   GitSignsAdd = { bg = "#1F1F28", fg = "#76946a" },
   FloatBorder = { bg = "#1F1F28", fg = "#54546d" },
   NoiceMini = { bg = "#1F1F28" },
+  TelescopeSelection = { fg = "#ff9e3b", bg = "#1F1F28" },
 }

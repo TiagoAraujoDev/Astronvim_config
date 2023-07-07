@@ -68,7 +68,7 @@ return {
     },
   },
   {
-    "project.nvim",
+    "project_nvim",
     keys = {
       { "<leader>fp", "<cmd>Telescope projects initial_mode=normal<cr>", desc = "Find projects" },
     },

@@ -171,8 +171,8 @@ return {
       require "plugins.configs.telescope" (plugin, opts)
 
       -- require telescope and load extensions as necessary
-      local telescope = require "telescope"
-      telescope.load_extension "projects"
+      -- local telescope = require "telescope"
+      -- telescope.load_extension "projects"
     end,
   },
   -- rebelot/heirline.nvim
