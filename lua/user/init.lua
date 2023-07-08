@@ -82,13 +82,14 @@ return {
   -- augroups/autocommands and custom filetypes also this just pure lua so
   -- anything that doesn't fit in the normal config locations above can go here
   polish = function()
-    -- vim.api.nvim_create_augroup("set_format_opts", { clear = true })
-    -- create a new autocmd on the "User" event
-    -- vim.api.nvim_create_autocmd("User", {
-    --   desc = "When Inserting line bellow disable autocomment", -- nice description
-    --   pattern = "*", -- the pattern si the name of our User autocommand events
-    --   group = "set_format_opts", -- add the autocmd to the newly created augroup
-    --   command = vim.cmd [[set formatoptions-=cro]],
-    -- })
+    vim.api.nvim_create_augroup("set_format_opts", { clear = true })
+
+    vim.api.nvim_create_autocmd("User", {
+      desc = "When Inserting line bellow disable autocomment",
+      pattern = "AstroFile",
+      group = "set_format_opts",
+      -- command = "echo 42",
+      command = "set formatoptions-=cro",
+    })
   end,
 }
