@@ -1,6 +1,6 @@
 return function(local_vim)
   -- OPTS
-  local_vim.opt.relativenumber = false
+  local_vim.opt.relativenumber = true
   local_vim.opt.showtabline = 0
 
   -- Global
