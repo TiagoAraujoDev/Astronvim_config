@@ -10,7 +10,7 @@ return {
       -- customize the buttons
       local button = require("astronvim.utils").alpha_button
       opts.section.buttons.val = {
-        button("LDR n", "  New File"),
+        button("LDR   a", "  New File"),
         button("LDR f p", "  Find Projects"),
         button("LDR f f", "  Find File"),
         button("LDR f o", "  Recents"),

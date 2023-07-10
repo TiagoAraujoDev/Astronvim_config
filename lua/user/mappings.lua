@@ -9,6 +9,7 @@ return {
   n = {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "buffer"
+    ["<leader>a"] = { "<cmd>enew<cr>", desc = "new file" },
     -- switch buffer
     -- noice close notification
     ["<leader>n"] = { "<cmd>lua require('notify').dismiss()<cr>", desc = "dismiss notification" },
