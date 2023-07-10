@@ -18,6 +18,7 @@ return {
   },
   -- Set colorscheme to use
   -- colorscheme = "vscode",
+  -- colorscheme = "base16-onedark",
   colorscheme = "kanagawa",
   -- colorscheme = "onedark",
   -- colorscheme = "nightfox",
