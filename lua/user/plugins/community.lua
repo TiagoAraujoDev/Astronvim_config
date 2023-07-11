@@ -19,7 +19,7 @@ return {
   { import = "astrocommunity.utility.transparent-nvim" },
 
   -- Editing support
-  -- { import = "astrocommunity.editing-support.nvim-ts-rainbow2" },
+  { import = "astrocommunity.editing-support.multicursors-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
 
   -- Motion
@@ -27,7 +27,7 @@ return {
   { import = "astrocommunity.motion.leap-nvim" },
 
   -- Markdown and latex
-  { import = "astrocommunity.markdown-and-latex.glow-nvim" },
+  { import = "astrocommunity.markdown-and-latex.glow-nvim", enabled = false },
 
   -- Project
   { import = "astrocommunity.project.project-nvim" },
@@ -76,7 +76,17 @@ return {
   {
     "glow.nvim",
     keys = {
-      { "<leader>m", "<cmd>Glow<cr>", desc = "Preview markdown" },
+      { "<leader>z", "<cmd>Glow<cr>", desc = "Preview markdown" },
+    },
+  },
+  {
+    "smoka7/multicursors.nvim",
+    keys = {
+      {
+        "<Leader>m",
+        "<cmd>MCstart<cr>",
+        desc = "multicursors start",
+      },
     },
   },
   {
