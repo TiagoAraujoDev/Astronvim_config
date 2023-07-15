@@ -23,6 +23,7 @@ return {
   -- colorscheme = "onedark",
   -- colorscheme = "nightfox",
   -- colorscheme = "astrodark",
+  -- colorscheme = "astromars",
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
     virtual_text = true,
@@ -85,11 +86,10 @@ return {
   polish = function()
     -- vim.api.nvim_create_augroup("set_format_opts", { clear = true })
     --
-    -- vim.api.nvim_create_autocmd("User", {
-    --   desc = "When Inserting line bellow disable autocomment",
-    --   pattern = "AstroFile",
-    --   group = "set_format_opts",
-    --   command = "set formatoptions-=cro",
-    -- })
+    vim.api.nvim_create_autocmd("FileType", {
+      desc = "When Inserting line bellow disable autocomment",
+      pattern = "*",
+      command = "set formatoptions-=cro",
+    })
   end,
 }

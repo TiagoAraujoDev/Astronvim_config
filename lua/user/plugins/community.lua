@@ -27,7 +27,7 @@ return {
   { import = "astrocommunity.motion.leap-nvim" },
 
   -- Markdown and latex
-  { import = "astrocommunity.markdown-and-latex.glow-nvim", enabled = false },
+  { import = "astrocommunity.markdown-and-latex.glow-nvim" },
 
   -- Project
   { import = "astrocommunity.project.project-nvim" },
