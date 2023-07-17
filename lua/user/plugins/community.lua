@@ -46,12 +46,14 @@ return {
   { import = "astrocommunity.colorscheme.onedarkpro-nvim", enabled = true },
 
   -- Extra configuration for the community plugins
+  -- todo-comments-nvim
   {
     "todo-comments.nvim",
     keys = {
       { "<leader>fT", "<cmd>TodoTelescope<cr>", desc = "Find ToDo Comments" },
     },
   },
+  -- onedarkpro-nvim
   {
     "onedarkpro.nvim",
     opts = {
@@ -67,18 +69,21 @@ return {
       },
     },
   },
+  -- project_nvim
   {
     "project_nvim",
     keys = {
       { "<leader>fp", "<cmd>Telescope projects initial_mode=normal<cr>", desc = "Find projects" },
     },
   },
+  -- glow-nvim
   {
     "glow.nvim",
     keys = {
       { "<leader>z", "<cmd>Glow<cr>", desc = "Preview markdown" },
     },
   },
+  -- multicursors-nvim
   {
     "smoka7/multicursors.nvim",
     keys = {
@@ -89,6 +94,7 @@ return {
       },
     },
   },
+  -- noice-nvim
   {
     "noice.nvim",
     opts = {
@@ -108,12 +114,6 @@ return {
           border = { style = "rounded", padding = { 1, 2 } },
           win_options = {
             winblend = 5,
-            winhighlight = {
-              Normal = "NormalFloat",
-              FloatBorder = "NoiceCmdlinePopupBorder",
-              IncSearch = "",
-              Search = "",
-            },
             cursorline = false,
           },
         },

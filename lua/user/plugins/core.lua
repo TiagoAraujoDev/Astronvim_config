@@ -264,4 +264,13 @@ return {
       max_width = function() return math.floor(vim.o.columns * 0.75) end,
     },
   },
+  -- neo-tree
+  {
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      window = {
+        position = "right",
+      },
+    },
+  },
 }
