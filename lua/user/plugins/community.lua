@@ -18,6 +18,12 @@ return {
   { import = "astrocommunity.utility.noice-nvim" },
   { import = "astrocommunity.utility.transparent-nvim" },
 
+  -- Debugging
+  { import = "astrocommunity.debugging.nvim-bqf" },
+
+  -- Diagnostic
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
+
   -- Editing support
   { import = "astrocommunity.editing-support.multicursors-nvim" },
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
@@ -40,10 +46,10 @@ return {
   { import = "astrocommunity.colorscheme.tokyonight-nvim", enabled = false },
   { import = "astrocommunity.colorscheme.gruvbox-nvim", enabled = false },
   { import = "astrocommunity.colorscheme.everforest-nvim", enabled = false },
-  { import = "astrocommunity.colorscheme.nightfox-nvim", enabled = true },
+  { import = "astrocommunity.colorscheme.nightfox-nvim", enabled = false },
   { import = "astrocommunity.colorscheme.onigiri-nvim", enabled = false },
-  { import = "astrocommunity.colorscheme.vscode-nvim", enabled = true },
-  { import = "astrocommunity.colorscheme.onedarkpro-nvim", enabled = true },
+  { import = "astrocommunity.colorscheme.vscode-nvim", enabled = false },
+  { import = "astrocommunity.colorscheme.onedarkpro-nvim", enabled = false },
 
   -- Extra configuration for the community plugins
   -- todo-comments-nvim
