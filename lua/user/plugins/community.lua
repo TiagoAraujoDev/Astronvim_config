@@ -39,6 +39,9 @@ return {
   { import = "astrocommunity.project.project-nvim" },
   { import = "astrocommunity.project.nvim-spectre" },
 
+  -- Bars-and-lines
+  { import = "astrocommunity.bars-and-lines.heirline-vscode-winbar" },
+
   -- Colorscheme
   { import = "astrocommunity.colorscheme.catppuccin", enabled = false },
   { import = "astrocommunity.colorscheme.kanagawa-nvim", enabled = true },
@@ -49,7 +52,7 @@ return {
   { import = "astrocommunity.colorscheme.nightfox-nvim", enabled = false },
   { import = "astrocommunity.colorscheme.onigiri-nvim", enabled = false },
   { import = "astrocommunity.colorscheme.vscode-nvim", enabled = false },
-  { import = "astrocommunity.colorscheme.onedarkpro-nvim", enabled = false },
+  { import = "astrocommunity.colorscheme.onedarkpro-nvim", enabled = true },
 
   -- Extra configuration for the community plugins
   -- todo-comments-nvim
