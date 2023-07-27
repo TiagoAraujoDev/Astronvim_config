@@ -13,6 +13,7 @@ return {
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.go" },
   { import = "astrocommunity.pack.astro" },
+  { import = "astrocommunity.pack.cpp" },
 
   -- Utilities
   { import = "astrocommunity.utility.noice-nvim" },
@@ -30,7 +31,8 @@ return {
 
   -- Motion
   { import = "astrocommunity.motion.nvim-surround" },
-  { import = "astrocommunity.motion.leap-nvim" },
+  { import = "astrocommunity.motion.hop-nvim" },
+  { import = "astrocommunity.motion.harpoon" },
 
   -- Markdown and latex
   { import = "astrocommunity.markdown-and-latex.glow-nvim" },
